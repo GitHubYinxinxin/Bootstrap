@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>表单</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+	</head>
+	<body>
+		<div class="container">
+		<h1>用户注册</h1>
+		<form action="/Handler.aspx" method="post" class="form-horizontal">
+			<div class="form-group">
+				<label for="txt_name">用户名:</label>
+				<input type="text" class="form-control" id="txt_name" placeholder="请输入用户名..." required="required">				
+			</div>
+			<div class="form-group">
+				<label for="txt_pwd">密码:</label>
+				<input type="password" class="form-control" id="txt_pwd" placeholder="请输入密码..." required="required">				
+			</div>
+			<div class="form-group">
+				<label for="txt_email">密码:</label>
+				<input type="email" class="form-control" id="txt_email" placeholder="请输入邮箱..." required="required">				
+			</div>
+			<div class="form-group">
+				<label for="txt_teach">学历:</label>
+				<select name="txt_teach" id="txt_teach" class="form-control">
+					<option value ="初中">初中</option>
+					<option value ="高中">高中</option>
+					<option value ="大学">大学</option>
+					<option value ="硕士">硕士</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="txt_remark">备注:</label>
+				<textarea rows="3" class="form-control" id="txt_remark" name="txt_remark"  placeholder="请输入备注..."></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">注册</button>
+		</form>
+		</div>
+		<em>这是一个像秋天的夏天</em>
+		
+		<script src="jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
